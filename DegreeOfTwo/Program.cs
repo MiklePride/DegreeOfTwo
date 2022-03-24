@@ -10,16 +10,13 @@
         int power = 1;
         int resultOfExponentiation = 2;
 
-        for (int i = power; power < randomNumbers; power++)
+        for (int i = power; resultOfExponentiation < randomNumbers; power++)
         {
             if (resultOfExponentiation <= randomNumbers)
             {
                 resultOfExponentiation = numberRaisedToPower * resultOfExponentiation;
             }
-            else
-            {
-                break;
-            }
+            
         }
         Console.WriteLine($"Минимальная степень двойки, превосходящая число {randomNumbers} будет {numberRaisedToPower}^{power}. {randomNumbers}<{resultOfExponentiation}");
     }
